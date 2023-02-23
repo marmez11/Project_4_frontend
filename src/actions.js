@@ -20,7 +20,7 @@ export const createAction = async ({request}) => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(newTodo)
+        body: JSON.stringify(newWeapon)
     })
 
     // redirect back to index page
@@ -47,7 +47,7 @@ export const updateAction = async ({request, params}) => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(updatedTodo)
+        body: JSON.stringify(updatedWeapons)
     })
 
     // redirect back to show page page
@@ -55,7 +55,7 @@ export const updateAction = async ({request, params}) => {
 }
 
 //deleteAction => delete a todo from form submissions to `/delete/:id`
-export const deleteAction_Weapons = async ({params}) => {
+export const deleteAction = async ({params}) => {
     // get todo id
     const id = params.id
 
